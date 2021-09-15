@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <GigGrid /> should change the snapshot when useFetchGifs is executed 1`] = `
+<Fragment>
+  <h3
+    className="animate__animated animate__fadeIn"
+  >
+    One punch man
+  </h3>
+  <div
+    className="card-grid"
+  >
+    <GifGridItem
+      id="ABC"
+      key="ABC"
+      title="ABC Title"
+      url="https://google.com"
+    />
+    <GifGridItem
+      id="123"
+      key="123"
+      title="ABC Title"
+      url="https://google.com"
+    />
+  </div>
+</Fragment>
+`;
+
+exports[`Pruebas en <GigGrid /> should show the correct component and match with the snapshot 1`] = `
+<Fragment>
+  <h3
+    className="animate__animated animate__fadeIn"
+  >
+    One punch man
+  </h3>
+  <p
+    className="animate__animated animate__flash"
+  >
+    Loading
+  </p>
+  <div
+    className="card-grid"
+  />
+</Fragment>
+`;
