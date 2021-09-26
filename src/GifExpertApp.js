@@ -17,7 +17,7 @@ export const GifExpertApp = ({defaultCategories = []}) => {
             {
                 categories.map( category => (
                     <GigGrid
-                        key = { category }
+                        key = { category } 
                         category = { category }
                     />
                 ))

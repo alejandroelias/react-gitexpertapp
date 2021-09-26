@@ -10,3 +10,25 @@ ReactDOM.render(
  
   document.getElementById('root')
 );
+
+
+///
+// ¿Qué veremos en esta sección?
+
+// Nuestra primera aplicación - Hola Mundo
+
+// Exposiciones sobre los componentes
+
+// Creación de componentes (Functional Components)
+
+// Propiedades - Props
+
+// Impresiones en el HTML
+
+// PropTypes
+
+// DefaultProps
+
+// Introducción general a los Hooks
+
+// useState

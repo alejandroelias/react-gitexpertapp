@@ -12,8 +12,15 @@ export const getGifs = async( category ) => {
             id: img.id,
             title: img.title,
             url: img.images?.downsized_medium.url
+            //.images?. ? es para evaluar si {data} trae images
         }
     })
 
     return gifs;
+    //Returna una promesa (async)
 }
+
+//Sobre la carpeta helpers, aqui se colocan archivos que contienen 
+//funciones que hacen cierto trabajo en especifico (que pueden recibir argumentos)
+//Estan funciones procesan estos argumentos y retornan un tipo de dato especificado
+//No es necesario que modifiquen el state
