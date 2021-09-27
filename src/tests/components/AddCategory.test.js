@@ -12,7 +12,7 @@ describe('Pruebas en <AddCategory />', () => {
         wrapper = shallow(<AddCategory setCategories = { setCategories }/>);
     })
     
-    test('debe de mostrarse correctamente', () => {
+    test('debe mostrar el componenete correctamente', () => {
         
         expect( wrapper ).toMatchSnapshot();
 

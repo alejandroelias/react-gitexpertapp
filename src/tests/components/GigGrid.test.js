@@ -8,7 +8,7 @@ describe('Pruebas en <GigGrid />', () => {
     
     const category = 'One punch man';
     // const wrapper = shallow(<GifGrid category={category}/>);
- 
+
     test('should show the correct component and match with the snapshot', () => {
         
         useFetchGifs.mockReturnValue({
