@@ -28,5 +28,5 @@ export const useFetchGifs = (category) => {
 }
 
 
-//la importacion de import React from 'react', no es necesario en este
+//la importacion de import React from 'react', NO es necesario en este
 //archivo porque esta funcion NO retorna JSX

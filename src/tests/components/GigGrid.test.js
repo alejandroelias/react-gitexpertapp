@@ -3,6 +3,7 @@ import React from 'react'
 import { GigGrid } from '../../components/GigGrid';
 import { useFetchGifs } from '../../hooks/useFetchGifs';
 jest.mock('../../hooks/useFetchGifs');
+//jest.mock sirve para fingir cualquier llamada a useFetchGifs
 
 describe('Pruebas en <GigGrid />', () => {
     
@@ -15,6 +16,7 @@ describe('Pruebas en <GigGrid />', () => {
             data: [],
             loading: true,
         });
+        //useFetchGifs.mockReturnValue, sirve para hacer una falsa implementacion
 
         const wrapper = shallow(<GigGrid category={category}/>);
         expect(wrapper).toMatchSnapshot(); 

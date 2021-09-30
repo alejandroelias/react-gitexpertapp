@@ -19,7 +19,6 @@ describe('Tests in hook useFetchGifs', () => {
     test('should return array of images and loading = false', async() => {
         
         const {result, waitForNextUpdate} = renderHook (()=> useFetchGifs('One Punch'));
-
         await waitForNextUpdate();
 
         const {data, loading} = result.current;

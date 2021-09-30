@@ -3,7 +3,8 @@ import { AddCategory } from './components/AddCategory';
 import { GigGrid } from './components/GigGrid';
 
 export const GifExpertApp = ({defaultCategories = []}) => {
-
+//Argumento {defaultCategories = []} en la fn GifExpertApp es para enviar un arreglo
+//Es decir se envian unas caterigorias por default
 
     const [categories, setCategories] = useState(defaultCategories);
     
