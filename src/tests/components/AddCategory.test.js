@@ -5,12 +5,15 @@ import { AddCategory } from '../../components/AddCategory'
 describe('Pruebas en <AddCategory />', () => {
     
     const setCategories = jest.fn();
+    //La funcion jest.fn() es el equivalente a la funcion ()=> {}
     let wrapper = shallow(<AddCategory setCategories = { setCategories }/>);
     
     beforeEach( ()=>{
         jest.clearAllMocks();
         wrapper = shallow(<AddCategory setCategories = { setCategories }/>);
     })
+    //beforeEach, esta relaciona al ciclo de vida de la app
+    //Se usa en test de submit
     
     test('debe mostrar el componenete correctamente', () => {
         
@@ -47,8 +50,8 @@ describe('Pruebas en <AddCategory />', () => {
 
         //3.setCategories se debe de haber llamado
         expect( setCategories ).toHaveBeenCalled();
-        expect( setCategories ).toHaveBeenCalled(1);
-        expect( setCategories ).toHaveBeenCalledWith( expect.any(Function));
+        // expect( setCategories ).toHaveBeenCalledTimes(1);
+        // expect( setCategories ).toHaveBeenCalledWith( expect.any(Function));
 
         //4.el valor del input debe de estar ''
         expect( wrapper.find('input').prop('value')).toBe('');
